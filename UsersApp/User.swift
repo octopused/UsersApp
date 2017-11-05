@@ -34,7 +34,7 @@ class User {
             let state = capitalize(self.state)
             let city = capitalize(self.city)
             let street = capitalize(self.street)
-            return "\(postCode ?? "") \(state ?? "") \(city ?? "") \(street ?? "")"
+            return "\(postCode) \(state) \(city) \(street)".trimmingCharacters(in: CharacterSet(charactersIn: " "))
         }
     }
 

@@ -16,6 +16,7 @@
 		C63A37241FA7A44E00E0294B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63A37231FA7A44E00E0294B /* User.swift */; };
 		C63A37261FA7A75D00E0294B /* APIManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63A37251FA7A75D00E0294B /* APIManger.swift */; };
 		C647C9F91FAC34C800050847 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C647C9F81FAC34C800050847 /* UsersTableViewController.swift */; };
+		C653CDB81FAF170300639FA8 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653CDB71FAF170300639FA8 /* DBManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		C63A37231FA7A44E00E0294B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C63A37251FA7A75D00E0294B /* APIManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManger.swift; sourceTree = "<group>"; };
 		C647C9F81FAC34C800050847 /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		C653CDB61FAF16D000639FA8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C653CDB71FAF170300639FA8 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,7 @@
 			children = (
 				C63A370A1FA7A21D00E0294B /* UsersApp */,
 				C63A37091FA7A21D00E0294B /* Products */,
+				C653CDB51FAF16D000639FA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				C63A370F1FA7A21D00E0294B /* Main.storyboard */,
+				C653CDB71FAF170300639FA8 /* DBManager.swift */,
 				C647C9F81FAC34C800050847 /* UsersTableViewController.swift */,
 				C62EA3281FAB400C00E0BDFD /* UserViewCell.swift */,
 				C63A37211FA7A34500E0294B /* UserInfoViewController.swift */,
@@ -74,6 +79,14 @@
 				C63A37171FA7A21D00E0294B /* Info.plist */,
 			);
 			path = UsersApp;
+			sourceTree = "<group>";
+		};
+		C653CDB51FAF16D000639FA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C653CDB61FAF16D000639FA8 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +167,7 @@
 				C63A37221FA7A34500E0294B /* UserInfoViewController.swift in Sources */,
 				C63A370C1FA7A21D00E0294B /* AppDelegate.swift in Sources */,
 				C63A37241FA7A44E00E0294B /* User.swift in Sources */,
+				C653CDB81FAF170300639FA8 /* DBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
