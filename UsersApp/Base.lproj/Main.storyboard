@@ -23,15 +23,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tpK-mb-t8f">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gW6-67-mHx">
                                 <rect key="frame" x="20" y="64" width="335" height="583"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a1q-uY-EZ1">
                                         <rect key="frame" x="67.5" y="0.0" width="200" height="200"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="azW-v4-8uU"/>
-                                            <constraint firstAttribute="height" constant="200" id="x9w-ay-VAY"/>
-                                        </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4VM-nV-gP1">
                                         <rect key="frame" x="127.5" y="220" width="80" height="363"/>
@@ -131,18 +127,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="q58-Ve-gCw" firstAttribute="bottom" secondItem="tpK-mb-t8f" secondAttribute="bottom" constant="20" id="03r-yf-Lk2">
-                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
-                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
-                            </constraint>
-                            <constraint firstItem="tpK-mb-t8f" firstAttribute="top" secondItem="q58-Ve-gCw" secondAttribute="top" id="Itp-xa-JOH"/>
-                            <constraint firstItem="tpK-mb-t8f" firstAttribute="leading" secondItem="q58-Ve-gCw" secondAttribute="leading" constant="20" id="caZ-D4-CvW">
-                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
-                            </constraint>
-                            <constraint firstItem="q58-Ve-gCw" firstAttribute="trailing" secondItem="tpK-mb-t8f" secondAttribute="trailing" constant="20" id="oey-Rd-anp">
-                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
-                            </constraint>
-                            <constraint firstItem="tpK-mb-t8f" firstAttribute="centerX" secondItem="J0a-QT-T9s" secondAttribute="centerX" id="vqa-BL-Pou"/>
+                            <constraint firstItem="gW6-67-mHx" firstAttribute="top" secondItem="q58-Ve-gCw" secondAttribute="top" id="8OE-Sa-TOz"/>
+                            <constraint firstItem="q58-Ve-gCw" firstAttribute="bottom" secondItem="gW6-67-mHx" secondAttribute="bottom" constant="20" id="F8j-Fa-eLS"/>
+                            <constraint firstItem="q58-Ve-gCw" firstAttribute="trailing" secondItem="gW6-67-mHx" secondAttribute="trailing" constant="20" id="MhD-xK-c4N"/>
+                            <constraint firstItem="gW6-67-mHx" firstAttribute="leading" secondItem="q58-Ve-gCw" secondAttribute="leading" constant="20" id="aG6-fe-DWp"/>
+                            <constraint firstItem="gW6-67-mHx" firstAttribute="centerX" secondItem="J0a-QT-T9s" secondAttribute="centerX" id="mer-s5-Maa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q58-Ve-gCw"/>
                     </view>
