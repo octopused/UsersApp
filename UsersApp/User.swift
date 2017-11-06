@@ -17,10 +17,7 @@ class User {
     var gender: String?
     var fullName: String? {
         get {
-            let firstName = capitalize(self.firstName)
-            let lastName = capitalize(self.lastName)
-            let title = capitalize(self.title)
-            return "\(title) \(firstName) \(lastName)".trimmingCharacters(in: CharacterSet(charactersIn: " "))
+            return "\(title ?? "") \(firstName) \(lastName)".trimmingCharacters(in: CharacterSet(charactersIn: " "))
         }
     }
     // Location
@@ -30,11 +27,7 @@ class User {
     var postCode: String?
     var location: String? {
         get {
-            let postCode = capitalize(self.postCode)
-            let state = capitalize(self.state)
-            let city = capitalize(self.city)
-            let street = capitalize(self.street)
-            return "\(postCode) \(state) \(city) \(street)".trimmingCharacters(in: CharacterSet(charactersIn: " "))
+            return "\(postCode ?? "") \(state ?? "") \(city ?? "") \(street ?? "")".trimmingCharacters(in: CharacterSet(charactersIn: " "))
         }
     }
 
@@ -57,14 +50,14 @@ class User {
     var pictureLarge: UIImage?
     
     init(from userInfoDict: [String: String]) {
-        self.firstName = userInfoDict["firstName"]!
-        self.lastName = userInfoDict["lastName"]!
-        self.title = userInfoDict["title"]
+        self.firstName = userInfoDict["firstName"]!.capitalizeFirstLetter()!
+        self.lastName = userInfoDict["lastName"]!.capitalizeFirstLetter()!
+        self.title = userInfoDict["title"]?.capitalizeFirstLetter()
         self.gender = userInfoDict["gender"]
         self.postCode = userInfoDict["postCode"]
-        self.state = userInfoDict["state"]
-        self.city = userInfoDict["city"]
-        self.street = userInfoDict["street"]
+        self.state = userInfoDict["state"]?.capitalizeFirstLetter()
+        self.city = userInfoDict["city"]?.capitalizeFirstLetter()
+        self.street = userInfoDict["street"]?.capitalizeFirstLetter()
         self.phone = userInfoDict["phone"]
         self.email = userInfoDict["email"]
         let dateFormatter = DateFormatter()
@@ -133,18 +126,20 @@ class User {
         }
         return usersInfo
     }
-    
-    func capitalize(_ string: String?) -> String {
-        if let string = string {
-            let words = string.split(separator: " ")
-            var sentence: String = ""
-            for word in words {
-                sentence.append(String(word.first!).capitalized + word.dropFirst())
-                sentence.append(" ")
-            }
-            return sentence.trimmingCharacters(in: CharacterSet(charactersIn: " "))
-        }
-        return ""
-    }
 }
 
+extension String {
+    func capitalizeFirstLetter() -> String? {
+        let string = self
+        let words = string.split(separator: " ")
+        var sentence: String = ""
+        for word in words {
+            sentence.append(String(word.first!).capitalized + word.dropFirst())
+            sentence.append(" ")
+        }
+        if sentence != "" {
+            return sentence
+        }
+        return nil
+    }
+}
