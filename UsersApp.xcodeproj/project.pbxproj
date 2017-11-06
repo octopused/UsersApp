@@ -14,7 +14,6 @@
 		C63A37161FA7A21D00E0294B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63A37141FA7A21D00E0294B /* LaunchScreen.storyboard */; };
 		C63A37221FA7A34500E0294B /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63A37211FA7A34500E0294B /* UserInfoViewController.swift */; };
 		C63A37241FA7A44E00E0294B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63A37231FA7A44E00E0294B /* User.swift */; };
-		C63A37261FA7A75D00E0294B /* APIManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63A37251FA7A75D00E0294B /* APIManger.swift */; };
 		C647C9F91FAC34C800050847 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C647C9F81FAC34C800050847 /* UsersTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 		C63A37171FA7A21D00E0294B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C63A37211FA7A34500E0294B /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		C63A37231FA7A44E00E0294B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		C63A37251FA7A75D00E0294B /* APIManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManger.swift; sourceTree = "<group>"; };
 		C647C9F81FAC34C800050847 /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		C653CDB61FAF16D000639FA8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -69,7 +67,6 @@
 				C62EA3281FAB400C00E0BDFD /* UserViewCell.swift */,
 				C63A37211FA7A34500E0294B /* UserInfoViewController.swift */,
 				C63A37231FA7A44E00E0294B /* User.swift */,
-				C63A37251FA7A75D00E0294B /* APIManger.swift */,
 				C63A370B1FA7A21D00E0294B /* AppDelegate.swift */,
 				C63A37121FA7A21D00E0294B /* Assets.xcassets */,
 				C63A37141FA7A21D00E0294B /* LaunchScreen.storyboard */,
@@ -158,7 +155,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C63A37261FA7A75D00E0294B /* APIManger.swift in Sources */,
 				C62EA3291FAB400C00E0BDFD /* UserViewCell.swift in Sources */,
 				C647C9F91FAC34C800050847 /* UsersTableViewController.swift in Sources */,
 				C63A37221FA7A34500E0294B /* UserInfoViewController.swift in Sources */,

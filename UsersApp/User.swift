@@ -38,7 +38,7 @@ class User {
         get {
             if let date = birthDate {
                 let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = APIManager.getDateFormatString()
+                dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
                 return dateFormatter.string(from: date)
             }
             return nil
@@ -62,7 +62,7 @@ class User {
         self.email = userInfoDict["email"]
         let dateFormatter = DateFormatter()
         if let birthDateString = userInfoDict["birthDate"] {
-            dateFormatter.dateFormat = APIManager.getDateFormatString()
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
             self.birthDate = dateFormatter.date(from: birthDateString)
         }
         if let pictureMediumUrlString = userInfoDict["pictureMediumUrlString"] {
